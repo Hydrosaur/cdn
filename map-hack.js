@@ -2109,7 +2109,7 @@ $(function() {
   }
 
   function getPngBase64() {
-    if(imageOverride){
+    if(!imageOverride){
       return Base64.encode(generatePng(width, height, createPng()));
     } else {
       return imageOverride;
